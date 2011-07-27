@@ -1,0 +1,9 @@
+<%#= paginate(@albums) %><br></br>
+<%= render :partial => 'friend/paginate' %>
+<br></br>
+<%  @albums.each do |album| %>
+    <%#= album.to_yaml %>
+    <%=link_to "#{album.name}",:action=>"view_album_photos",:id=>album.identifier %>
+   <br></br>
+   
+<% end %>

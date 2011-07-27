@@ -1,0 +1,7 @@
+<% @friends.each do |friend|%>
+  <%   user = FbGraph::User.fetch(friend.identifier,:access_token => current_user.access_token) %>
+  <%= user.name %>
+  <!-- <fb:profile-pic uid="<%= user.identifier %>" size="normal" facebook-logo="true"></fb:profile-pic> -->
+  <br></br>
+  <%# break %>
+<% end %>

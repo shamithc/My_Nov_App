@@ -1,0 +1,17 @@
+<%= ">>>>>>>>>>>>>>>>>>>"%>
+<%#= @albums.count%>
+<% @album= @albums %>
+<%#= @album.next.next.count %>
+<% n=1%>
+<% @album=@paginate %>
+<% while(n>0)%>
+   <% if @album.count>0 %>
+     <%= link_to "#{n}",:action=>params[:action],:page=>n%>
+     <%# if @album.next.count!=0%>
+      <% @album=@album.next %>
+     <%# end %>
+   <% else %>
+     <% break %>
+   <% end%>
+   <% n=n+1 %>
+<% end %>

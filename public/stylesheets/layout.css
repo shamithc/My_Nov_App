@@ -1,0 +1,73 @@
+/*-----------------]: layout :[---------------------*/
+
+body > h1 {
+	margin-left: 130px;
+	padding: 15px;
+	text-align: left;
+	height: 35px;/*  background: url('') repeat-x top left; */
+}
+body > h1 a, body > h1 a:hover {
+}
+body > .container {
+	width: 800px;
+	margin:20px;
+}
+body > .container .main {
+	float: right;
+	width: 615px;
+	min-height: 400px;
+	background:#fff;
+	padding: 10px 0 0 30px;
+	box-shadow: 0 0 5px #888888;
+}
+body > .container .sidebar {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #CCCCCC;
+    box-shadow: 0 0 5px #888888;
+    float: left;
+    left: 10px;
+    padding: 0 0 15px;
+    position: absolute;
+    text-align: center;
+    top: 20px;
+    width: 154px;
+	min-height:390px;
+	}
+body > .container img {
+	border: 1px solid #DDDDDD;
+	float: left;
+	margin: 10px;
+}
+body > .container .sidebar p, body > .container .sidebar dl {
+	text-align: left;
+	font-size:12px;
+}
+body > footer {
+	clear: both;
+	color: #C1B49A;
+	text-align: center;
+	height: 17px;
+	padding: 85px 0 20px;
+	background: #333 url("/images/footer_back.png") repeat-x;
+}
+body > footer, body > footer small {
+	font-size: 12px;
+}
+body > footer a {
+	color: #AEDEE4;
+}
+body > footer li {
+	display: inline-block;
+	margin: 0 10px;
+}
+profile-pic {
+padding:0 0 0 20px;
+}
+#profile-pic img {
+	width:100px;
+	height:auto;
+	
+}
+#main-wrap h2 {
+	padding:10px;
+}

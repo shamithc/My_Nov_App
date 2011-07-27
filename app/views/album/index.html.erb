@@ -1,0 +1,31 @@
+<div id="main-wrap">
+
+<script type="text/javascript">
+<!--
+$(document).ready(function(){
+$("a#aaa").lightBox({fixedNavigation:true});
+});
+
+-->
+</script>
+<h2>Hello <fb:name uid='<%= fb_current_user.identifier %>' useyou='false'></fb:name>!</h2>
+
+<% @albums.photos.each do |a| %>
+ <% a.images.each do |t| %>
+     <% if t.width==180 %>
+        <% @thumb= t.source%>
+        <% @width= t.width%>
+        <% @height= t.height %>
+     <% end %>
+ <% end %>
+
+ <%#= a.to_yaml%>
+   
+   <a href=<%= a.source %> id='aaa'><img src=<%= @thumb %>  width=<%= @width %> height=<%= @height %> alt="" /></a>
+   <%= link_to "Add",:controller=>"flicker_fun",:path=>a.source %> 
+  
+  <% end%>
+
+</div>
+  
+

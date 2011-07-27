@@ -1,0 +1,8 @@
+<% @albums.each do |album| %>
+
+  <%= link_to "#{album.name}", :controller=>"album",:id=>album.identifier %>
+  <%= album.identifier %>
+<br></br>
+  <%#= album.name %>
+<br></br>
+<% end %>
